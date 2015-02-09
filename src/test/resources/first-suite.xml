@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="First suite" parallel="tests" thread-count="1">
+    <parameter name="hubURL" value="http://10.70.21.216:4444/wd/hub"/>
+    <parameter name="proxyIP" value="10.70.21.216"/>
+    <test name="First part tests">
+        <classes>
+            <class name="com.blogspot.notes.automation.qa.tests.FirstSampleTests">
+                <methods>
+                    <include name="firstTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
